@@ -8,7 +8,7 @@ print('\n\nSongs Project.\n_______________________________\n\nGetting Spotify da
 countries_list = ['de', 'es', 'fr', 'il', 'pl', 'us']
 
 # Define dates
-start = '2017-01-31'
+start = '2017-12-31'
 end = '2019-01-01'
 
 charts_dict = {}
