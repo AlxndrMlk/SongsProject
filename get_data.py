@@ -19,7 +19,7 @@ for country in countries_list:
 
     print(f'\nGetting chart for {country.upper()}...\n')
     data = spotify.get_charts(start=start, end=end, region=country, freq='weekly', chart='top200', sleep=sleep)
-    filename = fr'data/{country}_{start[:4]}.csv'
+    filename = fr'data/{country}_{int(start[:4])+1}.csv'
     data.to_csv(filename, index=False)
     print(f'Chart for {country.upper()} ({start[:4]}) saved as {filename}\n')
     print('__________________________________________')
